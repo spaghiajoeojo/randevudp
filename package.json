@@ -1,0 +1,16 @@
+{
+  "name": "randevu",
+  "version": "1.0.0",
+  "description": "A free UDP puncher server",
+  "main": "server.js",
+  "dependencies": {
+    "uuid": "^3.4.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Lorenzo Beccaro",
+  "license": "MIT"
+}
