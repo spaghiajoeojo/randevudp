@@ -1,7 +1,7 @@
 var udp = require('dgram');
 var uuid = require('uuid/v1');
 // --------------------creating a udp server --------------------
-
+const PORT = process.env.PORT || 2222;
 // creating a udp server
 var server = udp.createSocket('udp4');
 var peers = {};
@@ -63,4 +63,4 @@ server.on('close', function () {
     console.log('Socket is closed !');
 });
 
-server.bind(2222);
+server.bind(PORT);
