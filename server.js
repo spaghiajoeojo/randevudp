@@ -35,7 +35,7 @@ server.on('message', function (msg, info) {
     }
 
     //sending msg
-    server.send(response, info.port, 'localhost', function (error) {
+    server.send(response, info.port, info.address, function (error) {
         if (error) {
             console.error(error);
             client.close();
